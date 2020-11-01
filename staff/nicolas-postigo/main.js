@@ -19,15 +19,6 @@
     
     //register
     var register = mountRegister(function(fullname, email, password, repassword){
-        registerUser(fullname, name, email, password, repassword, function(error){
-            if(error)
-                alert(error.message)
-            else register.replaceWith(confirm)
-        })
-    })
-    
-    //register confirm
-    var register = mountRegister(function(fullname, email, password, repassword){
         registerUser(fullname, email, password, repassword, function(error){
             if(error)
                 alert(error.message)
@@ -35,6 +26,11 @@
         })
     })
     
+    //register confirm
+    var confirm = mountRegisterConfirm(function () {
+        confirm.replaceWith(login)
+    })
+
     //login
     var login = mountLogin(function (email, password) {
         authenticateUser(email, password, function (error, token) {
