@@ -1,10 +1,8 @@
-function Title(onHome) {
-    Component.call(this, `<div class="container">
-    <img class= "logo" src="images/covid_logo.svg" alt="">
-    <div>`)
+function mountTitle(onHome) {
+    var container = mountContainer(`<img class= "logo" src="images/covid_logo.svg" alt="">`)
 
-    this.container.onclick = onHome
+    container.onclick = onHome
+
+    return container
 }
 
-Title.prototype = Object.create(Component.prototype)
-Title.prototype.constructor = Title

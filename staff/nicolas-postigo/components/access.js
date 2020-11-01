@@ -1,19 +1,18 @@
-function Access(onRegister, onLogin) {
-    Component.call(this, `<div>
+function mountAccess(onRegister, onLogin) {
+    var container = mountContainer(`<div>
     <section class="section__main">
         <button class="register__button">Register</button>
         <button class="login__button">Login</button>
     </section>
 </div>`)
 
-    var register = this.container.querySelector('.register__button')
+    var register = container.querySelector('.register__button')
 
     register.onclick = onRegister
 
-    var login = this.container.querySelector('.login__button')
+    var login = container.querySelector('.login__button')
 
     login.onclick = onLogin
-}
 
-Access.prototype = Object.create(Component.prototype)
-Access.prototype.constructor = Access
+    return container
+}

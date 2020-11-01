@@ -1,5 +1,5 @@
-function Login(onLogin) {
-    Component.call(this, `<section>
+function mountLogin(onLogin) {
+    var container = mountContainer(`<section>
     <h2> LOGIN </h2>
     <form class="login__form">
         <input type="email" name="e-mail" placeholder="e-mail" required>
@@ -8,7 +8,7 @@ function Login(onLogin) {
     </form>
 </section>`)
 
-    var form = this.container.querySelector('.login__form')
+    var form = container.querySelector('.login__form')
 
     form.onsubmit = function (event) {
         event.preventDefault()
@@ -24,7 +24,6 @@ function Login(onLogin) {
             alert(error.message)
         }
     }
-}
 
-Login.prototype = Object.create(Component.prototype)
-Login.prototype.constructor = Login
+    return container
+}
