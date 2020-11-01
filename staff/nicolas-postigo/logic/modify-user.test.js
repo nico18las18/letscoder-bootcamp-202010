@@ -20,7 +20,7 @@
                         var resText = JSON.parse(response)
                         token = resText.token
                         console.assert(status === 200, "should status be 200"); {
-                            modifyUser('{"city": "Nueva York"}', token, function (error, item) {
+                            modifyUser("Age: 35", token, function (error, item) {
                                 console.log(' should succed modifying a user');
                                 console.assert(item.fullname === fullname);
                                 console.assert(!!item.fullname);
@@ -41,5 +41,6 @@
 
                     })
             });
-        })
+        })();
+
 })();
