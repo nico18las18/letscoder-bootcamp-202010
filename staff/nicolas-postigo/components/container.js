@@ -1,5 +1,5 @@
 function mountContainer(template) {
-    var temp = document.createElement('container')
+    var temp = document.createElement('div')
 
     temp.innerHTML = template
 
