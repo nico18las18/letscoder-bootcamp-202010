@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
-.container {
-  width: 100vw;
-  height: 100vh;
-  align-content: center;
-  align-items: left;
-  background-color: #ffffff;
-}
-
 h2 {
   font-family: "Merriweather Sans", sans-serif;
   font-size: 17px;
