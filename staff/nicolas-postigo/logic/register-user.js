@@ -20,7 +20,7 @@ function registerUser(fullname, email, password, repassword, callback) {
     if (password !== repassword) throw new Error('passwords don\'t match')
 
     if (typeof callback !== 'function') throw new TypeError(callback + ' is not a callback')
-
+    
     call("POST", "https://b00tc4mp.herokuapp.com/api/v2/users",
     { 'Content-type': 'application/json' },
     '{ "fullname": "' + fullname + '", "username": "' + email + '", "password": "' + password + '" }',
