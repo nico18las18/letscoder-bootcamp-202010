@@ -5,18 +5,16 @@ const retrieveUser = (token, callback) => {
 
     if (typeof callback !== 'function') throw new TypeError(callback + ' is not a callback')
 
-    call("GET", "https://b00tc4mp.herokuapp.com/api/v2/users",
-    { 'Authorization': `Bearer ${token}` }, "",
-        (status, response) => {
+    call('GET', 'https://b00tc4mp.herokuapp.com/api/v2/users', { Authorization: `Bearer ${token}` }, '',
+    (status, response) => {
+        if (status === 200) {
+            const res = JSON.parse(response)
 
-            if (status === 200) {
-            var resText  = JSON.parse(response)
-                callback(null, resText)
+            callback(null, res)
+        } else {
+            const { error } = JSON.parse(response)
 
-            }else{
-
-                    callback(new Error(resText.error))
-                }
-            }
-        )
-    }
+            callback(new Error(error))
+        }
+    })
+} 

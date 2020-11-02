@@ -2,8 +2,8 @@ function mountRegister(onRegister) {
     var container = mountContainer(`<section>
     <h2> Register here for actual information <br> of covid cases </h2>
     <form class="register__form">
-        <input class="input1" type="text" name="fullname" placeholder="fullname" _required>
-        <input type="email" name="e-mail" placeholder="e-mail" required>
+        <input type="text" name="fullname" placeholder="full name" _required>
+        <input type="email" name="email" placeholder="e-mail" required>
         <input type="password" name="password" placeholder="password" required>
         <input type="password" name="repassword" placeholder="repeat password" required>
         <button class="register__button2">Register</button>
@@ -29,7 +29,6 @@ function mountRegister(onRegister) {
             alert(error.message)
         }
     }
-
     return container
 }
 

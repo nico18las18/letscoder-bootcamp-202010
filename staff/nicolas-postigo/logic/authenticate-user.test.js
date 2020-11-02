@@ -7,7 +7,6 @@
         var email = 'johndoe-' + Math.random() + '@mail.com'
         var password = 'pass-' + Math.random()
         var repassword = password
-
         call('POST', 'https://b00tc4mp.herokuapp.com/api/v2/users',
             { 'Content-type': 'application/json' },
             '{ "fullname": "' + fullname + '", "username": "' + email + '", "password": "' + password + '", "repassword": "' + repassword + '" }',
