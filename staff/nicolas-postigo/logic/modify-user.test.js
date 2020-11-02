@@ -1,5 +1,5 @@
 (function () {
-
+    
     console.log('TEST modifyUser()');
     (function () {
         var fullname = 'AAAAA' + Math.random();
@@ -20,10 +20,8 @@
                         var resText = JSON.parse(response)
                         token = resText.token
                         console.assert(status === 200, "should status be 200"); {
-                            modifyUser("Age: 35", token, function (error, item) {
-                                console.log(' should succed modifying a user');
-                                console.assert(item.fullname === fullname);
-                                console.assert(!!item.fullname);
+                            console.log(' should succed modifying a user');
+                                modifyUser({age: 35}, token, function (error, item) {
                                 console.assert(error === null, 'should error be null');
                                 call('DELETE', 'https://b00tc4mp.herokuapp.com/api/v2/users',
                                     {
