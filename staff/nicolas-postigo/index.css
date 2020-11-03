@@ -33,7 +33,7 @@ header {
   display: none;
 }
 
-.section__main {
+.access {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,10 +127,83 @@ input {
 }
 
 .welcome {
-  margin-left: 25vw;
   font-family: "Merriweather Sans", sans-serif;
   font-size: 30px;
   color: #0a6495;
+  text-align: center;
+}
+
+.welcome__image {
+  width: 50vw;
+  height: 50vw;
+}
+
+.logOut {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: flex-end;
+  margin-right: 15vw;
+}
+
+.logOut__button {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 18px;
+  margin-left: 15vw;
+  margin-top: 5vw;
+  height: 5vh;
+  width: 30vw;
+  background-color: #0a6495;
+  color: white;
+  border-radius: 6px;
+}
+
+.logOut__symbol {
+  padding: 1vw;
+  color: white;
+  font-size: 25px;
+}
+
+.save {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 18px;
+  margin-top: 5vw;
+  height: 5vh;
+  width: 14vw;
+  background-color: #0a6495;
+  color: white;
+  border-radius: 6px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.profile__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+}
+.profile__form input {
+  height: 4vh;
+  width: 50vw;
+  margin: 3px;
+}
+
+.profile__button {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 18px;
+  margin-top: 5vw;
+  height: 5vh;
+  width: 50vw;
+  background-color: #0a6495;
+  color: white;
+  border-radius: 6px;
 }
 
 /*# sourceMappingURL=index.css.map */
