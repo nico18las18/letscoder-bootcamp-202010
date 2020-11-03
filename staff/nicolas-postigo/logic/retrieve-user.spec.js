@@ -1,4 +1,4 @@
-const { random } = Math
+var { random } = Math
 
 describe('SPEC retrieveUser()', function () {
     describe('when user already exists', function () {
@@ -42,7 +42,6 @@ describe('SPEC retrieveUser()', function () {
                 expect(user.fullname).toBe(fullname)
                 expect(user.username).toBe(email)
 
-                expect(true).toBeTrue()
 
                 done()
             })
