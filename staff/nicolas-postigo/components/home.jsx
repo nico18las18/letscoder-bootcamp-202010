@@ -69,14 +69,15 @@ class Home extends Component {
      
     handleSearchCovid = query => {
         const { token } = sessionStorage
-
+        console.log(query)
         try {
             searchCovid(token, query, (error, array) => {
                 if (error) return alert(error.message)
+                console.log(array)
+                const {country: title, cases, todayCases, deaths, recovered, like} = array
+                //array = array.map(({ country: title, cases, todayCases, deaths, recovered, like }) => ({ title, cases, todayCases, deaths, recovered, like }))
 
-                array = array.map(({ country: title, cases, todayCases, deaths, recovered, like }) => ({ title, cases, todayCases, deaths, recovered, like }))
-
-                this.setState({ array, covidCountry: undefined, query })
+                this.setState({ filter: { title, cases, todayCases, deaths, recovered, like}, covidCountry: undefined, query })
             })
         } catch ({ message }) {
             alert(message)
@@ -112,7 +113,7 @@ class Home extends Component {
     }
 
     render() {
-        const { state: { covidCountry, array, subview, vehicles, vehicle, user }, handleGoToProfile, handleModifyUser, handleSearchVehicles, handleSearchVehicles2, handleSearchCovid, handleGoToVehicle, handleLike } = this
+        const { state: { covidCountry, filter, subview, vehicles, vehicle, user }, handleGoToProfile, handleModifyUser, handleSearchVehicles, handleSearchVehicles2, handleSearchCovid, handleGoToVehicle, handleLike } = this
 
         return <>
             {user && <Welcome name={user.fullname} image={user.image} />}
@@ -131,7 +132,7 @@ class Home extends Component {
 
             {!vehicle && vehicles && <Results items={vehicles} currency="$" onItem={handleGoToVehicle} onLike={handleLike} />}
 
-            {!covidCountry && array && <Results2 items={array}/>}
+            {!covidCountry && filter && <Results2 itemsFilter={filter}/>}
 
             { vehicle && <Detail item={vehicle} currency="$" onLike={handleLike} />}
         </>

@@ -11,7 +11,7 @@ function searchCovid(token, countryName, callback) {
 
     if (typeof callback !== 'function') throw new TypeError(callback + ' is not a callback')
   
-    call('GET', `https://coronavirus-19-api.herokuapp.com/countries/`,
+    call('GET', countryName ? `https://coronavirus-19-api.herokuapp.com/countries/${countryName}` : `https://coronavirus-19-api.herokuapp.com/countries/`,
         {}, '', function (status, response) {
             if (status === 200) {
                 const covidCountries = JSON.parse(response)
