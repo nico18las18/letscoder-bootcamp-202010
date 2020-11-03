@@ -42,7 +42,7 @@ class App extends Component {
         return <>
             <Title onHome={handleGoToAccess} />
 
-            {token && <div className="logOut"><button className="logOut__button" onClick={handleLogout}>Log Out <span className="logOut__symbol"><i class="fas fa-sign-out-alt"></i></span></button></div>}
+            {token && <div className="logOut"><button className="logOut__button" onClick={handleLogout}>Log Out <span className="logOut__symbol"><i className="fas fa-sign-out-alt"></i></span></button></div>}
 
             {view === 'access' && <Access onRegister={handleGoToRegister} onLogin={handleGoToLogin} />}
 

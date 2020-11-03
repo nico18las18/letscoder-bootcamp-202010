@@ -35,8 +35,8 @@ class Home extends Component {
         })
     }
 
-    handleSearchVehicles = query => {
-        const { token } = sessionStorage
+   handleSearchVehicles = query => {
+       const { token } = sessionStorage
 
         try {
             searchVehicles(token, query, (error, vehicles) => {
@@ -49,15 +49,50 @@ class Home extends Component {
         } catch ({ message }) {
             alert(message)
         }
+    } 
+
+    handleSearchVehicles2 = query => {
+        const { token } = sessionStorage
+ 
+         try {
+             searchVehicles2(token, query, (error, vehicles) => {
+                 if (error) return alert(error.message)
+ 
+                 vehicles = vehicles.map(({ id, name: title, thumbnail: image, price, like }) => ({ id, title, image, price, like }))
+ 
+                 this.setState({ vehicles, vehicle: undefined, query })
+             })
+         } catch ({ message }) {
+             alert(message)
+         }
+     } 
+     
+    handleSearchCovid = query => {
+        const { token } = sessionStorage
+
+        try {
+            searchCovid(token, query, (error, array) => {
+                if (error) return alert(error.message)
+
+                array = array.map(({ country: title, cases, todayCases, deaths, recovered, like }) => ({ title, cases, todayCases, deaths, recovered, like }))
+
+                this.setState({ array, covidCountry: undefined, query })
+            })
+        } catch ({ message }) {
+            alert(message)
+        }
     }
 
+
     handleGoToVehicle = vehicleId => {
-        retrieveVehicle(vehicleId, (error, vehicle) => {
+        const { token } = sessionStorage
+
+        retrieveVehicle(token, vehicleId, (error, vehicle) => {
             if (error) return alert(error.message)
 
-            const { id, name: title, year, description: preview, price, url, image } = vehicle
+            const { id, name: title, year, description: preview, price, url, image, like } = vehicle
 
-            this.setState({ vehicle: { id, title, year, preview, price, url, image } })
+            this.setState({ vehicle: { id, title, year, preview, price, url, image, like } })
         })
     }
 
@@ -67,12 +102,17 @@ class Home extends Component {
         toggleLikeVehicle(token, vehicleId, error => {
             if (error) return alert(error.message)
 
-            this.handleSearchVehicles(this.state.query)
+            const { state : { vehicle }} = this
+
+            if (vehicle)
+                this.handleGoToVehicle(vehicleId)
+            else
+                this.handleSearchVehicles(this.state.query)
         })
     }
 
     render() {
-        const { state: { subview, vehicles, vehicle, user }, handleGoToProfile, handleModifyUser, handleSearchVehicles, handleGoToVehicle, handleLike } = this
+        const { state: { covidCountry, array, subview, vehicles, vehicle, user }, handleGoToProfile, handleModifyUser, handleSearchVehicles, handleSearchVehicles2, handleSearchCovid, handleGoToVehicle, handleLike } = this
 
         return <>
             {user && <Welcome name={user.fullname} image={user.image} />}
@@ -85,9 +125,15 @@ class Home extends Component {
 
             <Search onSearch={handleSearchVehicles} />
 
+            <Search onSearch2={handleSearchVehicles2} />
+
+            <Search2 onSearch2={handleSearchCovid} /> 
+
             {!vehicle && vehicles && <Results items={vehicles} currency="$" onItem={handleGoToVehicle} onLike={handleLike} />}
 
-            { vehicle && <Detail item={vehicle} currency="$" />}
+            {!covidCountry && array && <Results2 items={array}/>}
+
+            { vehicle && <Detail item={vehicle} currency="$" onLike={handleLike} />}
         </>
     }
 } 
