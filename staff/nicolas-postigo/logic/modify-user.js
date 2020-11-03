@@ -1,4 +1,4 @@
-function modifyUser(update,token,callback) {
+function modifyUser(token,update,callback) {
     /* if (typeof update !== "object") throw new TypeError("update is not an object")
     if (Object.keys(update).length === 0) throw new TypeError("update is blank or empty") */
     if (typeof token !== "string") throw new TypeError("token is not a string")
