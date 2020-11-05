@@ -1,6 +1,6 @@
 function Profile({ fullname, image, onModify }) {
     return <>
-        <form class="profile__form" onSubmit={function (event) {
+        <form className="profile__form" onSubmit={function (event) {
             event.preventDefault()
 
             const { target: { fullname: { value: fullname }, image: { value: image } } } = event
@@ -10,7 +10,7 @@ function Profile({ fullname, image, onModify }) {
             <input type="text" name="fullname" placeholder="full name" defaultValue={fullname} />
             <input type="text" name="image" placeholder="image url" defaultValue={image} />
 
-            <button class="save">Save</button>
+            <button className="save">Save</button>
         </form>
     </>
 } 

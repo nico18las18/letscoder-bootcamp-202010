@@ -24,7 +24,7 @@ class Register extends Component {
 
         return <section className="register">
             <h2>REGISTER</h2>
-
+            
             <form className="register__form" onSubmit={function (event) {
                 event.preventDefault()
 
@@ -36,7 +36,7 @@ class Register extends Component {
                 <input type="email" name="email" placeholder="e-mail" required />
                 <input type="password" name="password" placeholder="password" required />
                 <input type="password" name="repassword" placeholder="repeat password" required />
-                <button class= "register__button2">Register</button>
+                <button className= "register__button2">Register</button>
             </form>
 
             {error && <Feedback message={error} level="error" />}

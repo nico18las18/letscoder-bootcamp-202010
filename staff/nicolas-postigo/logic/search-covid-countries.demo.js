@@ -1,0 +1,3 @@
+searchCovidCountries("",
+    console.log
+) 

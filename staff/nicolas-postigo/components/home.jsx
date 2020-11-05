@@ -4,7 +4,7 @@ class Home extends Component {
     constructor() {
         super()
 
-        this.state = {}
+        this.state = { subview: 'search' }
     }
 
     componentWillMount() {
@@ -35,8 +35,8 @@ class Home extends Component {
         })
     }
 
-   handleSearchVehicles = query => {
-       const { token } = sessionStorage
+    handleSearchVehicles = query => {
+        const { token } = sessionStorage
 
         try {
             searchVehicles(token, query, (error, vehicles) => {
@@ -49,41 +49,7 @@ class Home extends Component {
         } catch ({ message }) {
             alert(message)
         }
-    } 
-
-    handleSearchVehicles2 = query => {
-        const { token } = sessionStorage
- 
-         try {
-             searchVehicles2(token, query, (error, vehicles) => {
-                 if (error) return alert(error.message)
- 
-                 vehicles = vehicles.map(({ id, name: title, thumbnail: image, price, like }) => ({ id, title, image, price, like }))
- 
-                 this.setState({ vehicles, vehicle: undefined, query })
-             })
-         } catch ({ message }) {
-             alert(message)
-         }
-     } 
-     
-    handleSearchCovid = query => {
-        const { token } = sessionStorage
-        console.log(query)
-        try {
-            searchCovid(token, query, (error, array) => {
-                if (error) return alert(error.message)
-                console.log(array)
-                const {country: title, cases, todayCases, deaths, recovered, like} = array
-                //array = array.map(({ country: title, cases, todayCases, deaths, recovered, like }) => ({ title, cases, todayCases, deaths, recovered, like }))
-
-                this.setState({ filter: { title, cases, todayCases, deaths, recovered, like}, covidCountry: undefined, query })
-            })
-        } catch ({ message }) {
-            alert(message)
-        }
     }
-
 
     handleGoToVehicle = vehicleId => {
         const { token } = sessionStorage
@@ -103,7 +69,7 @@ class Home extends Component {
         toggleLikeVehicle(token, vehicleId, error => {
             if (error) return alert(error.message)
 
-            const { state : { vehicle }} = this
+            const { state: { vehicle } } = this
 
             if (vehicle)
                 this.handleGoToVehicle(vehicleId)
@@ -112,29 +78,40 @@ class Home extends Component {
         })
     }
 
+    handleGoToLikes = () => {
+        const { token } = sessionStorage
+
+        retrieveLikedVehicles(token, (error, likedVehicles) => {
+            if (error) alert(error.message)
+
+            this.setState({ subview: 'likes', likedVehicles })
+        })
+    }
+
+    handleGoToSearch = () => this.setState({ subview: 'search' })
+
     render() {
-        const { state: { covidCountry, filter, subview, vehicles, vehicle, user }, handleGoToProfile, handleModifyUser, handleSearchVehicles, handleSearchVehicles2, handleSearchCovid, handleGoToVehicle, handleLike } = this
+        const { state: { subview, vehicles, vehicle, user, likedVehicles }, handleGoToProfile, handleModifyUser, handleSearchVehicles, handleGoToVehicle, handleLike, handleGoToLikes, handleGoToSearch } = this
 
         return <>
             {user && <Welcome name={user.fullname} image={user.image} />}
 
-            <div className="profile"><button className="profile__button" onClick={handleGoToProfile}>PROFILE</button></div>
+            <button onClick={handleGoToSearch}>Search</button>
 
+            <button onClick={handleGoToLikes}>Likes</button>
+
+            <button onClick={handleGoToProfile}>Profile</button>
+
+            {subview === 'likes' && <Results items={likedVehicles} currency="$" />}
+
+            {subview === 'search' && <>
+                <Search onSearch={handleSearchVehicles} />
+
+                {!vehicle && vehicles && <Results items={vehicles} currency="$" onItem={handleGoToVehicle} onLike={handleLike} />}
+
+                {vehicle && <Detail item={vehicle} currency="$" onLike={handleLike} />}
+            </>}
             {subview === 'profile' && <Profile onModify={handleModifyUser} fullname={user.fullname} image={user.image} />}
-
-            <h2>Vehicles</h2>
-
-            <Search onSearch={handleSearchVehicles} />
-
-            <Search onSearch2={handleSearchVehicles2} />
-
-            <Search2 onSearch2={handleSearchCovid} /> 
-
-            {!vehicle && vehicles && <Results items={vehicles} currency="$" onItem={handleGoToVehicle} onLike={handleLike} />}
-
-            {!covidCountry && filter && <Results2 itemsFilter={filter}/>}
-
-            { vehicle && <Detail item={vehicle} currency="$" onLike={handleLike} />}
         </>
     }
 } 

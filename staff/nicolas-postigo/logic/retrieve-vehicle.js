@@ -13,7 +13,6 @@ const retrieveVehicle = (token, vehicleId, callback) => {
         (status, response) => {
             if (status === 200) {
                 const vehicle = JSON.parse(response)
-
                 if (vehicle)
                     call('GET', 'https://b00tc4mp.herokuapp.com/api/v2/users', { Authorization: `Bearer ${token}` }, '',
                         (status, response) => {

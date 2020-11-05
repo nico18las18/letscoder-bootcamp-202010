@@ -13,17 +13,17 @@ function searchVehicles(token, query, callback) {
         {}, '', function (status, response) {
             if (status === 200) {
                 const vehicles = JSON.parse(response)
-
                 call('GET', 'https://b00tc4mp.herokuapp.com/api/v2/users', { Authorization: `Bearer ${token}` }, '',
                     (status, response) => {
                         if (status === 200) {
                             const { likes = [] } = JSON.parse(response)
 
                             vehicles.forEach(vehicle => vehicle.like = likes.includes(vehicle.id))
-
+            
                             callback(null, vehicles)
                         }
                     })
+                    console.log(vehicles.like)
             } else callback(new Error('sorry, cannot search :('))
         })
 }
