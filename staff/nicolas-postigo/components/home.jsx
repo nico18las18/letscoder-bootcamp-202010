@@ -82,7 +82,7 @@ class Home extends Component {
         return <>
             {user && <Welcome name={user.fullname} image={user.image} />}
 
-            <div class="button_container">
+            <div className="button_container">
                 <button className="search_button" onClick={handleGoToSearchCovidSearcher}>Search</button>
 
                 <button className="profile_button" onClick={handleGoToProfile}>Profile</button>

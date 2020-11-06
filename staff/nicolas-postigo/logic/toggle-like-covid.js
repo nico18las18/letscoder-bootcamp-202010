@@ -1,3 +1,21 @@
+/**
+ *  The callback expression that manages the result of the toggling
+ *
+ * @callback callback
+ * 
+ * @param {Error} error In case a fail is detected on response from API
+ * @param {string} token The toggling token when credentials are correct (validation in API)
+ */
+
+/**
+ * 
+ * @param {JSON} token The user token
+ * @param {string} countryId The user countryId(s)
+ * @param {callback} callback The callback expression that manages the result of the toggling
+ * 
+ * @throws {TypeError} On type validation error
+ * @throws {Error} On content validation error
+ */
 const toggleLikeCovid = (token, countryId, callback) => {
    
     if (typeof token !== 'string') throw new TypeError(token + ' is not a token')

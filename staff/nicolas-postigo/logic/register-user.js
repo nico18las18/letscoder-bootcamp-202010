@@ -1,3 +1,34 @@
+/**
+ *  The callback expression that manages the result of the registration
+ *
+ * @callback callback
+ * 
+ * @param {Error} error In case a fail is detected on response from API
+ * @param {string} token The register token when credentials are correct (validation in API)
+ */
+
+/**
+ * Modification of a user by means of token.
+ * 
+ * @example
+ * 
+ * registerUser('Ga To', 'ga@to.com', '123', '123', function(error) {
+ *    console.log('DEMO registerUser()')
+ *   
+ *  if (!error) console.log('ok, perfect, user registered! ,)')
+ *   else console.error('ERROR! ' + error.message) 
+ * })
+ * 
+ * @param {string} fullname The user's fullname
+ * @param {string} email The user's email
+ * @param {string} password The user's password
+ * @param {string} repassword The user's repassword
+ * @param {callback} callback The callback expression that manages the result of the registration
+ * 
+ * @throws {TypeError} On type validation error
+ * @throws {Error} On content validation error
+ */
+
 function registerUser(fullname, email, password, repassword, callback) {
     if (typeof fullname !== 'string') throw new TypeError(fullname + ' is not a full name')
 

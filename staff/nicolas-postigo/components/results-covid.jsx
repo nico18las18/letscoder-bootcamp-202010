@@ -10,7 +10,7 @@ function ResultsCovid({ items, onCountry, onLike }) {
           event.stopPropagation()
           onLike(country)
         }
-        } >{like ? '❤️' : '🖤'}</h3>
+        } >{like ? <i className="far fa-eye"></i> :<i className="far fa-eye-slash"></i>}</h3>
       </li>
     })}
   </ul>

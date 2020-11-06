@@ -1,8 +1,11 @@
+@charset "UTF-8";
 h2 {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 17px;
+  font-size: 25px;
   color: #0a6495;
-  margin-left: 9vw;
+  align-items: center;
+  text-align: center;
+  margin-right: 40px;
 }
 
 .register__form {
@@ -64,7 +67,7 @@ header {
 input {
   height: 4vh;
   width: 80vw;
-  margin: 3px;
+  margin: 3px ´;
 }
 
 .register__confirm {
@@ -100,7 +103,10 @@ input {
   border-radius: 6px;
 }
 
-.h2 {
+.h3 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 30px;
+  color: #0a6495;
   align-items: center;
   text-align: center;
 }
@@ -134,8 +140,8 @@ input {
 }
 
 .welcome__image {
-  width: 50vw;
-  height: 50vw;
+  width: 80vw;
+  height: 80vw;
 }
 
 .logOut {
@@ -190,9 +196,11 @@ input {
   margin-top: 20px;
 }
 .profile__form input {
-  height: 4vh;
-  width: 50vw;
+  height: 6vh;
+  width: 80vw;
   margin: 3px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 22px;
 }
 
 .profile_button {
@@ -226,8 +234,18 @@ input {
   margin-left: 27vw;
 }
 
-.search_form {
-  width: 50vw;
+.countries_form {
+  height: 6vh;
+  width: 80vw;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 16px;
+}
+
+.detail-covid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
 /*# sourceMappingURL=index.css.map */
