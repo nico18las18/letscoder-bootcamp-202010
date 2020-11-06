@@ -35,82 +35,67 @@ class Home extends Component {
         })
     }
 
-    handleSearchVehicles = query => {
+    handleLikeCovid = countryId => {
+        const { token } = sessionStorage
+
+        toggleLikeCovid(token, countryId, error => {
+            if (error) return alert(error.message)
+
+            const { state: { country, query } } = this
+
+            if (country)
+                this.handleGoToCountry(countryId)
+            else
+                this.handleSearchCovid(query)
+        })
+    }
+
+    handleSearchCovid = query => {
         const { token } = sessionStorage
 
         try {
-            searchVehicles(token, query, (error, vehicles) => {
+            searchCovidCountries(token, query, (error, countries) => {
                 if (error) return alert(error.message)
 
-                vehicles = vehicles.map(({ id, name: title, thumbnail: image, price, like }) => ({ id, title, image, price, like }))
-
-                this.setState({ vehicles, vehicle: undefined, query })
+                this.setState({ countries, country: undefined, query, subview: 'search-covid' })
             })
         } catch ({ message }) {
             alert(message)
         }
     }
 
-    handleGoToVehicle = vehicleId => {
+    handleGoToCountry = countryId => {
         const { token } = sessionStorage
 
-        retrieveVehicle(token, vehicleId, (error, vehicle) => {
+        retrieveCovidCountry(token, countryId, (error, country) => {
             if (error) return alert(error.message)
 
-            const { id, name: title, year, description: preview, price, url, image, like } = vehicle
-
-            this.setState({ vehicle: { id, title, year, preview, price, url, image, like } })
-        })
+            this.setState({ subview: "search-covid", country})
+        }
+        )
     }
-
-    handleLike = vehicleId => {
-        const { token } = sessionStorage
-
-        toggleLikeVehicle(token, vehicleId, error => {
-            if (error) return alert(error.message)
-
-            const { state: { vehicle } } = this
-
-            if (vehicle)
-                this.handleGoToVehicle(vehicleId)
-            else
-                this.handleSearchVehicles(this.state.query)
-        })
-    }
-
-    handleGoToLikes = () => {
-        const { token } = sessionStorage
-
-        retrieveLikedVehicles(token, (error, likedVehicles) => {
-            if (error) alert(error.message)
-
-            this.setState({ subview: 'likes', likedVehicles })
-        })
-    }
-
-    handleGoToSearch = () => this.setState({ subview: 'search' })
+    handleGoToSearchCovidSearcher = () => this.setState({ subview: 'search-covid' })
 
     render() {
-        const { state: { subview, vehicles, vehicle, user, likedVehicles }, handleGoToProfile, handleModifyUser, handleSearchVehicles, handleGoToVehicle, handleLike, handleGoToLikes, handleGoToSearch } = this
+        const { state: { subview, countries, country, user }, handleGoToSearchCovidSearcher, handleGoToProfile, handleSearchCovid, handleGoToCountry, handleLikeCovid, handleModifyUser } = this
 
         return <>
             {user && <Welcome name={user.fullname} image={user.image} />}
 
-            <button onClick={handleGoToSearch}>Search</button>
+            <div class="button_container">
+                <button className="search_button" onClick={handleGoToSearchCovidSearcher}>Search</button>
 
-            <button onClick={handleGoToLikes}>Likes</button>
+                <button className="profile_button" onClick={handleGoToProfile}>Profile</button>
+            </div>
 
-            <button onClick={handleGoToProfile}>Profile</button>
+            {subview === 'search-covid' && <>
+                <SearchCovid onSearchCountry={handleSearchCovid} />
 
-            {subview === 'likes' && <Results items={likedVehicles} currency="$" />}
+                {!country && countries && <ResultsCovid items={countries} user={user} onCountry={handleGoToCountry} onLike={handleLikeCovid} />}
 
-            {subview === 'search' && <>
-                <Search onSearch={handleSearchVehicles} />
-
-                {!vehicle && vehicles && <Results items={vehicles} currency="$" onItem={handleGoToVehicle} onLike={handleLike} />}
-
-                {vehicle && <Detail item={vehicle} currency="$" onLike={handleLike} />}
+                { country && <DetailCovid item={country} onLike={handleLikeCovid} />}
             </>}
+
             {subview === 'profile' && <Profile onModify={handleModifyUser} fullname={user.fullname} image={user.image} />}
         </>
     }
