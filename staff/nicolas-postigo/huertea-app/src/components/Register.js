@@ -1,14 +1,19 @@
 import React from 'react'
 import './Register.sass'
 
+
 function Register() {
     return <sections>
-        <h2>Únete a huertea</h2>
+            <h1>¡Únete a huertea!</h1>
         <form>
-            <input type="text" name="fullname" placeholde="nombre" />
-            <input type="email" name="email" placeholde="e-mail" />
-            <input type="password" name="password" placeholde="contraseña" />
-            <button>Entrar</button>
+            <input type="text" name="fullname" placeholder="Nombre y Apellidos" />
+            <input type="email" name="email" placeholder="Email" />
+            <input type="password" name="password" placeholder="Constraseña" />
+            <p>Al registrar o iniciar sesión, aceptas nuestros Términos y  Condiciones y la Política de Privacidad</p>
+            <button className = 'entrar' >Entrar &#129321;</button>
+
+            
+            
         </form>
 
     </sections>
