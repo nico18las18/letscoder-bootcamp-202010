@@ -1,16 +1,16 @@
 import React from 'react'
-import './Register.sass'
+import './Login.sass'
 
 
-function Register({ onRegister }) {
+function Login({ onLogin }) {
     return <sections>
-            <h1>¡Únete a huertea!</h1>
+            <h1>Accede</h1>
         <form onSubmit={event => {
             event.preventDefault()
 
             const { target: { fullname: { value: fullname}, email: { value: email}, password: { value: password}}} = event
 
-            onRegister(fullname, email, password)
+            onLogin(fullname, email, password)
         }}>
             <input type="text" name="fullname" placeholder="Nombre y Apellidos" />
             <input type="email" name="email" placeholder="Email" />
@@ -26,4 +26,4 @@ function Register({ onRegister }) {
 
 }
 
-export default Register
+export default Login
