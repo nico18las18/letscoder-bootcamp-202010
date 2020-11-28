@@ -10,19 +10,23 @@ function App() {
 
 
   const handleRegister = (fullname, email, password) => {
-    registerUser(fullname, email, password, error => {
-
-    })
+    console.log(fullname, email, password)
 
     setView('login')
   }
 
+  const handleLogin = (email, password) => {
+    console.log(email, password)
+
+    setView('home')
+  }
 
   return (
     <div className="App">
       <header className="App-header">
         {view === 'register' && <Register onRegister={handleRegister} />}
-        {view === 'login' && <Login />}
+        {view === 'login' && <Login onLogin={handleLogin}/>}
+        {view === 'home' && <Home />}
       </header>
     </div>
   );
