@@ -4,10 +4,6 @@ import './Home.sass'
 
 function Home({ onHome }) {
     return <sections>
-        <div className="slidebar">
-            <button className="homebuttons">Regístrate</button>
-            <button className="homebuttons">Entra</button>
-        </div>
 
         <form className="search_form" onSubmit={function (event) {
             event.preventDefault()
@@ -15,10 +11,20 @@ function Home({ onHome }) {
             onHome(product)
         }}>
             <input className="searcher" type="text" name="query" placeholder="🔍 Busca en huertea" />
-            <button className="searchtype" type="reset">❌</button>
-            <button className="searchtype" type="submit">🔍</button>
+            <button className="homebuttons">Regístrate</button>
+            <button className="homebuttons">Entra</button>
         </form>
         <h3>¿Qué alimento quieres hoy?</h3>
+    
+            <div>
+               <button className="tags">Cebolla</button> 
+               <button className="tags">Tomate</button> 
+               <button className="tags">Lechuga</button> 
+               <button className="tags">Pepino</button> 
+               <button className="tags">Pimiento</button> 
+            </div>
+
+
     </sections>
 
 }

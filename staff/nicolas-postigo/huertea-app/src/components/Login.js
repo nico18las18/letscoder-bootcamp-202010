@@ -8,11 +8,10 @@ function Login({ onLogin }) {
         <form onSubmit={event => {
             event.preventDefault()
 
-            const { target: { fullname: { value: fullname}, email: { value: email}, password: { value: password}}} = event
+            const { target: { email: { value: email}, password: { value: password}}} = event
 
-            onLogin(fullname, email, password)
+            onLogin(email, password)
         }}>
-            <input type="text" name="fullname" placeholder="Nombre y Apellidos" />
             <input type="email" name="email" placeholder="Email" />
             <input type="password" name="password" placeholder="Constraseña" />
             <p>Al registrar o iniciar sesión, aceptas nuestros Términos y  Condiciones y la Política de Privacidad</p>
