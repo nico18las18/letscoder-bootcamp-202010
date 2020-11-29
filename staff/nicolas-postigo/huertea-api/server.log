@@ -173,3 +173,252 @@ Require stack:
     at Module.load (internal/modules/cjs/loader.js:879:32)
     at Function.Module._load (internal/modules/cjs/loader.js:724:14)
 info 2020-11-29T17:17:55.807Z - stopping server
+info 2020-11-29T17:33:08.476Z - starting server
+error 2020-11-29T17:33:08.585Z - Error: Cannot find module '../../../logic'
+Require stack:
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-register-user.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-register-user.js:1:26)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js:3:25)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+info 2020-11-29T17:33:08.594Z - stopping server
+info 2020-11-29T17:44:08.847Z - starting server
+error 2020-11-29T17:44:08.943Z - Error: Cannot find module '../../../logic'
+Require stack:
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-register-user.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-register-user.js:1:26)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js:3:25)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+info 2020-11-29T17:44:08.962Z - stopping server
+info 2020-11-29T17:44:40.031Z - starting server
+error 2020-11-29T17:44:40.105Z - Error: Cannot find module '../../../logic'
+Require stack:
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-register-user.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-register-user.js:1:26)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js:3:25)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+info 2020-11-29T17:44:40.110Z - stopping server
+info 2020-11-29T17:45:21.808Z - starting server
+error 2020-11-29T17:45:21.891Z - Error: Cannot find module '../../../logic'
+Require stack:
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-register-user.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-register-user.js:1:26)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js:3:25)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+info 2020-11-29T17:45:21.893Z - stopping server
+info 2020-11-29T17:49:45.104Z - starting server
+error 2020-11-29T17:49:45.292Z - Error: Cannot find module '../../../logic'
+Require stack:
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-authenticate-user.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-authenticate-user.js:1:30)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js:4:29)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+info 2020-11-29T17:49:45.302Z - stopping server
+info 2020-11-29T17:50:40.235Z - starting server
+error 2020-11-29T17:50:40.363Z - Error: Cannot find module './handle-authenticate-user'
+Require stack:
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js:4:29)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\index.js:11:5)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+info 2020-11-29T17:50:40.393Z - stopping server
+info 2020-11-29T17:52:00.595Z - starting server
+error 2020-11-29T17:52:00.734Z - Error: Cannot find module '../../../logic'
+Require stack:
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-authenticate-user.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-authenticate-user.js:1:30)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js:4:29)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+info 2020-11-29T17:52:00.747Z - stopping server
+info 2020-11-29T17:54:16.094Z - starting server
+error 2020-11-29T17:54:16.185Z - Error: Cannot find module '../../../logic'
+Require stack:
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-authenticate-user.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\index.js
+- C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-authenticate-user.js:1:30)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\index.js:4:29)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+info 2020-11-29T17:54:16.198Z - stopping server
+info 2020-11-29T17:54:38.399Z - starting server
+info 2020-11-29T17:54:38.699Z - server running on port 4000
+error 2020-11-29T17:55:36.714Z - TypeError: registerUser is not a function
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-register-user.js:7:9)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\helpers\with-error-handling.js:6:9
+    at Layer.handle [as handle_request] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\route.js:137:13)
+    at IncomingMessage.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\middlewares\json-body-parser.js:21:13)
+    at IncomingMessage.emit (events.js:314:20)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+error 2020-11-29T17:56:37.251Z - TypeError: registerUser is not a function
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-register-user.js:7:9)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\helpers\with-error-handling.js:6:9
+    at Layer.handle [as handle_request] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\route.js:137:13)
+    at IncomingMessage.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\middlewares\json-body-parser.js:21:13)
+    at IncomingMessage.emit (events.js:314:20)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+info 2020-11-29T17:58:00.273Z - stopping server
+info 2020-11-29T17:58:16.292Z - starting server
+info 2020-11-29T17:58:17.268Z - server running on port 4000
+error 2020-11-29T17:58:58.651Z - TypeError: registerUser is not a function
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-register-user.js:7:9)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\helpers\with-error-handling.js:6:9
+    at Layer.handle [as handle_request] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\route.js:137:13)
+    at IncomingMessage.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\middlewares\json-body-parser.js:21:13)
+    at IncomingMessage.emit (events.js:314:20)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+info 2020-11-29T18:00:22.177Z - starting server
+info 2020-11-29T18:00:22.398Z - server running on port 4000
+error 2020-11-29T18:01:03.824Z - TypeError: registerUser is not a function
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-register-user.js:7:9)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\helpers\with-error-handling.js:6:9
+    at Layer.handle [as handle_request] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\route.js:137:13)
+    at IncomingMessage.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\middlewares\json-body-parser.js:21:13)
+    at IncomingMessage.emit (events.js:314:20)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+info 2020-11-29T18:04:15.817Z - starting server
+info 2020-11-29T18:04:16.021Z - server running on port 4000
+error 2020-11-29T18:05:02.929Z - ValidationError: User validation failed: password: Path `password` (`www`) is shorter than the minimum allowed length (6).
+    at model.Document.invalidate (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\mongoose\lib\document.js:2622:32)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\mongoose\lib\document.js:2442:17
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\mongoose\lib\schematype.js:1225:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)

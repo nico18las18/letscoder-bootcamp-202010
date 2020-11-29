@@ -1,4 +1,4 @@
-const { retrieveUser } = require('../../../logic')
+const { retrieveUser } = require('../../../logic/')
 const jwt = require('jsonwebtoken')
 
 const { env: { JWT_SECRET } } = process

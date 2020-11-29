@@ -1,4 +1,4 @@
-const { registerUser } = require('../../../logic')
+const { registerUser } = require('../../../logic/')
 
 module.exports = (req, res, handleError) => {
     const { body: { fullname, email, password } } = req
