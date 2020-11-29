@@ -24,9 +24,15 @@ function App() {
 
 
   const handleRegister = (fullname, email, password) => {
-    console.log(fullname, email, password)
+    try {
+      registerUser(fullname, email, password, error => {
+        if (error) return alert(error.message)
 
-    setView('login')
+        setView('login')
+      })
+    } catch (error) {
+      alert(error.message)
+    }
   }
 
   const handleLogin = (email, password) => {
