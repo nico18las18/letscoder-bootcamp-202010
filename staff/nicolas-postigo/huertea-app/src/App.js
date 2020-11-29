@@ -1,13 +1,16 @@
 import './App.css';
-import { Register, Login } from './components'
-import Home from './components/Home';
+import { Register, Login, Hub, Home } from './components'
 import { useState } from 'react'
 import { registerUser } from './logic'
 
 function App() {
-  const[view, setView] = useState('register')
+  const[view, setView] = useState('home')
 
+  const handleGoToRegister = () => {
+    console.log('fue bien')
 
+    setView('register')
+  }
 
   const handleRegister = (fullname, email, password) => {
     console.log(fullname, email, password)
@@ -18,15 +21,16 @@ function App() {
   const handleLogin = (email, password) => {
     console.log(email, password)
 
-    setView('home')
+    setView('hub')
   }
 
   return (
     <div className="App">
       <header className="App-header">
+        {view === 'home' && <Home onHome={handleGoToRegister} />}
         {view === 'register' && <Register onRegister={handleRegister} />}
         {view === 'login' && <Login onLogin={handleLogin}/>}
-        {view === 'home' && <Home />}
+        {view === 'hub' && <Hub />}
       </header>
     </div>
   );
