@@ -2,7 +2,7 @@ import React from 'react'
 import './Hub.sass'
 
 
-function Hub({ onHub }) {
+function Hub({ onHub, onGoCreateoffer }) {
     return <sections>
 
         <form className="search_form" onSubmit={function (event) {
@@ -11,13 +11,11 @@ function Hub({ onHub }) {
             onHub(product)
         }}>
             <input className="searcher" type="text" name="query" placeholder="🔍 Busca en huertea" />
-            <button className="hubbuttons">Regístrate</button>
-            <button className="hubbuttons">Entra</button>
         </form>
         <h3>¿Qué alimento quieres hoy?</h3>
     
             <div>
-               <button className="offer">crea tu oferta</button> 
+               <button onClick={onGoCreateoffer} className="offer">crea tu oferta &#127806;</button> 
             </div>
 
 
