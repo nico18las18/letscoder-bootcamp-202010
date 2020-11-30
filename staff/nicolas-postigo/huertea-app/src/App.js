@@ -1,7 +1,7 @@
 import './App.css';
 import { Register, Login, Hub, Home, Createoffer } from './components'
 import { useState } from 'react'
-import { registerUser, authenticateUser, retrieveUser } from './logic'
+import { registerUser, authenticateUser, retrieveUser, createOffer } from './logic'
 
 
 
@@ -78,10 +78,17 @@ function App() {
   }
 
   const handleCreateOffer = (offername, image, location) => {
-    console.log(offername, image, location)
+  debugger
+     const { token } = sessionStorage
 
-    setView('hub')
-  }
+        createOffer(token, { offername, image, location }, error => {
+            if (error) alert(error.message)
+
+
+            setView('hub')
+            }) 
+        
+          }
 
 
   return (

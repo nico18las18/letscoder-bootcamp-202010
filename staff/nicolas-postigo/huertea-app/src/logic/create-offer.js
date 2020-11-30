@@ -1,19 +1,19 @@
 import { call } from '../utils'
-import { validateToken, validateUpdate, validateCallback } from './helpers/validations'
+import { validateUpdate, validateCallback } from './helpers/validations'
 
-export default function (token, update, callback) {
-    validateToken(token)
+export default function (update, callback) {
     validateUpdate(update)
     validateCallback(callback)
 
-    call('PATCH',
-        'https://b00tc4mp.herokuapp.com/api/v2/users',
-        { 'Authorization': 'Bearer ' + token, 'Content-type': 'application/json' },
+debugger
+    call('POST', 'http://localhost:4000/api/offer', { 'Content-type': 'application/json' },
         JSON.stringify(update),
         function (status, response) {
-            if (status === 204) {
+            if (status === 201) {
                 callback(null)
             } else {
+                debugger
+                console.log(response)
                 var res = JSON.parse(response)
                 callback(new Error(res.error))
             }

@@ -6,6 +6,7 @@ const {
     handleRegisterUser,
     handleAuthenticateUser,
     handleRetrieveUser,
+    handleCreateOffer
 } = require('./handlers')
 
 const withErrorHandling = require('./helpers/with-error-handling')
@@ -13,6 +14,8 @@ const withErrorHandling = require('./helpers/with-error-handling')
 const router = new Router()
 
 router.post('/api/accept-cookies', cookieParser, cookieSession, withErrorHandling(handleAcceptCookies))
+
+router.post('/api/offer', jsonBodyParser, withErrorHandling(handleCreateOffer))
 
 router.post('/api/users', jsonBodyParser, withErrorHandling(handleRegisterUser))
 

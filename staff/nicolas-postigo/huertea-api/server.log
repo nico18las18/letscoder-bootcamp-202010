@@ -697,3 +697,169 @@ error 2020-11-30T14:47:54.134Z - AuthError: wrong credentials
 error 2020-11-30T14:48:05.906Z - ConflictError: user with e-mail nicolas@mail.com already registered
     at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\register-user.js:16:33
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+error 2020-11-30T14:57:32.271Z - AuthError: wrong credentials
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\authenticate-user.js:18:39
+info 2020-11-30T15:41:09.727Z - starting server
+info 2020-11-30T15:41:10.085Z - server running on port 4000
+error 2020-11-30T15:41:50.198Z - AuthError: wrong credentials
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\authenticate-user.js:12:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+error 2020-11-30T15:41:58.795Z - AuthError: wrong credentials
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\authenticate-user.js:12:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+info 2020-11-30T16:53:01.841Z - starting server
+info 2020-11-30T16:53:02.530Z - server running on port 4000
+info 2020-11-30T17:31:54.506Z - stopping server
+info 2020-11-30T17:33:36.910Z - starting server
+info 2020-11-30T17:33:37.270Z - server running on port 4000
+info 2020-11-30T17:49:01.776Z - stopping server
+info 2020-11-30T17:49:49.075Z - starting server
+info 2020-11-30T17:49:49.602Z - server running on port 4000
+info 2020-11-30T17:52:20.976Z - stopping server
+info 2020-11-30T17:52:43.800Z - starting server
+info 2020-11-30T17:52:44.129Z - server running on port 4000
+info 2020-11-30T17:55:19.215Z - stopping server
+info 2020-11-30T17:56:01.116Z - starting server
+info 2020-11-30T17:56:02.225Z - server running on port 4000
+info 2020-11-30T18:03:01.377Z - stopping server
+info 2020-11-30T18:03:22.390Z - starting server
+info 2020-11-30T18:03:22.894Z - server running on port 4000
+info 2020-11-30T18:21:29.735Z - stopping server
+info 2020-11-30T18:21:43.698Z - starting server
+info 2020-11-30T18:21:43.900Z - server running on port 4000
+error 2020-11-30T18:22:12.714Z - TypeError: validateToken is not a function
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\create-offer.js:9:5)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-create-offer.js:7:9)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\helpers\with-error-handling.js:6:9
+    at Layer.handle [as handle_request] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\route.js:137:13)
+    at IncomingMessage.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\middlewares\json-body-parser.js:21:13)
+    at IncomingMessage.emit (events.js:314:20)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+error 2020-11-30T18:22:44.604Z - TypeError: validateToken is not a function
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\create-offer.js:9:5)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-create-offer.js:7:9)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\helpers\with-error-handling.js:6:9
+    at Layer.handle [as handle_request] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\route.js:137:13)
+    at IncomingMessage.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\middlewares\json-body-parser.js:21:13)
+    at IncomingMessage.emit (events.js:314:20)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+info 2020-11-30T18:25:04.722Z - stopping server
+info 2020-11-30T18:25:17.592Z - starting server
+info 2020-11-30T18:25:17.783Z - server running on port 4000
+error 2020-11-30T18:26:17.625Z - TypeError: undefined is not a token
+    at validateToken (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\helpers\validations.js:80:46)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\create-offer.js:9:5)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-create-offer.js:7:9)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\helpers\with-error-handling.js:6:9
+    at Layer.handle [as handle_request] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\route.js:137:13)
+    at IncomingMessage.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\middlewares\json-body-parser.js:21:13)
+    at IncomingMessage.emit (events.js:314:20)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+error 2020-11-30T18:26:52.332Z - TypeError: undefined is not a token
+    at validateToken (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\helpers\validations.js:80:46)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\create-offer.js:9:5)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-create-offer.js:7:9)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\helpers\with-error-handling.js:6:9
+    at Layer.handle [as handle_request] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\route.js:137:13)
+    at IncomingMessage.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\middlewares\json-body-parser.js:21:13)
+    at IncomingMessage.emit (events.js:314:20)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+info 2020-11-30T18:32:15.638Z - stopping server
+info 2020-11-30T18:33:13.630Z - starting server
+info 2020-11-30T18:33:14.029Z - server running on port 4000
+error 2020-11-30T18:34:50.196Z - TypeError: undefined is not a token
+    at validateToken (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\helpers\validations.js:59:46)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\create-offer.js:9:5)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-create-offer.js:7:9)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\helpers\with-error-handling.js:6:9
+    at Layer.handle [as handle_request] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\route.js:137:13)
+    at IncomingMessage.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\middlewares\json-body-parser.js:21:13)
+    at IncomingMessage.emit (events.js:314:20)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+error 2020-11-30T18:35:45.154Z - TypeError: undefined is not a token
+    at validateToken (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\helpers\validations.js:59:46)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\create-offer.js:9:5)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-create-offer.js:7:9)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\helpers\with-error-handling.js:6:9
+    at Layer.handle [as handle_request] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\route.js:137:13)
+    at IncomingMessage.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\middlewares\json-body-parser.js:21:13)
+    at IncomingMessage.emit (events.js:314:20)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+info 2020-11-30T18:36:48.450Z - stopping server
+info 2020-11-30T18:37:28.326Z - starting server
+info 2020-11-30T18:37:28.495Z - server running on port 4000
+error 2020-11-30T18:38:12.678Z - AuthError: wrong credentials
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\authenticate-user.js:12:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+error 2020-11-30T18:38:26.384Z - TypeError: undefined is not a token
+    at validateToken (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\helpers\validations.js:59:46)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\create-offer.js:9:5)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-create-offer.js:7:9)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\helpers\with-error-handling.js:6:9
+    at Layer.handle [as handle_request] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\route.js:137:13)
+    at IncomingMessage.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\middlewares\json-body-parser.js:21:13)
+    at IncomingMessage.emit (events.js:314:20)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+error 2020-11-30T18:39:06.090Z - TypeError: undefined is not a token
+    at validateToken (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\helpers\validations.js:59:46)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\create-offer.js:9:5)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-create-offer.js:7:9)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\helpers\with-error-handling.js:6:9
+    at Layer.handle [as handle_request] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\route.js:137:13)
+    at IncomingMessage.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\middlewares\json-body-parser.js:21:13)
+    at IncomingMessage.emit (events.js:314:20)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+info 2020-11-30T18:39:31.667Z - stopping server
+info 2020-11-30T18:39:47.684Z - starting server
+info 2020-11-30T18:39:47.972Z - server running on port 4000
+error 2020-11-30T18:40:41.903Z - TypeError: undefined is not a token
+    at validateToken (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\helpers\validations.js:59:46)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\create-offer.js:9:5)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-create-offer.js:7:9)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\helpers\with-error-handling.js:6:9
+    at Layer.handle [as handle_request] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\route.js:137:13)
+    at IncomingMessage.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\middlewares\json-body-parser.js:21:13)
+    at IncomingMessage.emit (events.js:314:20)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+error 2020-11-30T18:41:55.601Z - TypeError: undefined is not a token
+    at validateToken (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\helpers\validations.js:59:46)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\create-offer.js:9:5)
+    at module.exports (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-create-offer.js:7:9)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\helpers\with-error-handling.js:6:9
+    at Layer.handle [as handle_request] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\express\lib\router\route.js:137:13)
+    at IncomingMessage.<anonymous> (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\middlewares\json-body-parser.js:21:13)
+    at IncomingMessage.emit (events.js:314:20)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+info 2020-11-30T18:48:22.953Z - stopping server
+info 2020-11-30T18:48:36.028Z - starting server
+info 2020-11-30T18:48:36.273Z - server running on port 4000
+info 2020-11-30T18:50:18.403Z - starting server
+info 2020-11-30T18:50:18.619Z - server running on port 4000
+info 2020-11-30T18:53:25.129Z - stopping server
+info 2020-11-30T18:53:35.944Z - starting server
+info 2020-11-30T18:53:36.617Z - server running on port 4000
+info 2020-11-30T18:55:51.913Z - stopping server
+info 2020-11-30T18:56:01.314Z - starting server
+info 2020-11-30T18:56:01.588Z - server running on port 4000
+info 2020-11-30T18:59:22.446Z - starting server
+info 2020-11-30T18:59:22.817Z - server running on port 4000

@@ -12,9 +12,9 @@ module.exports = new Schema({
         required: true
     },
 
-    tags: [{
+/*     tags: [{
         type: String
-    }],
+    }], */
 
 
     //TODO PONER LOCALIZACIÓN

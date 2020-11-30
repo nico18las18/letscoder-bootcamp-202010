@@ -49,17 +49,15 @@ module.exports = {
         })
     },
 
-    validateVisibility(visibility) {
-        if (typeof visibility !== 'string') throw new TypeError(visibility + ' is not a visibility')
 
-        if (!visibility.trim().length) throw new ContentError('visibility is empty or blank')
-
-        if (visibility !== 'public' && visibility !== 'private') throw new ValueError('visibility is not public or private')
+    validateUpdate(update) {
+        if (typeof update !== "object") throw new TypeError("update is not an object")
+        if (Object.keys(update).length === 0) throw new TypeError("update is blank or empty")
     },
 
-    validateQuery(query) {
-        if (typeof query !== 'string') throw new TypeError(query + ' is not a query')
+    validateToken(token) {
+        if (typeof token !== 'string') throw new TypeError(token + ' is not a token')
 
-        if (!query.trim().length) throw new ContentError('query is empty or blank')
+        if (!token.trim().length) throw new Error('token is empty or blank')
     }
 }
