@@ -59,5 +59,10 @@ module.exports = {
         if (!visibility.trim().length) throw new Error('visibility is empty or blank')
 
         if (visibility !== 'public' && visibility !== 'private') throw new Error('visibility is not public or private')
+    },
+
+    validateUpdate(update) {
+        if (typeof update !== "object") throw new TypeError("update is not an object")
+        if (Object.keys(update).length === 0) throw new TypeError("update is blank or empty")
     }
 }
