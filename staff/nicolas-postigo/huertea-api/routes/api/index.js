@@ -14,8 +14,6 @@ const withErrorHandling = require('./helpers/with-error-handling')
 
 const router = new Router()
 
-// router.use(jsonBodyParser)
-
 router.post('/api/accept-cookies', cookieParser, cookieSession, withErrorHandling(handleAcceptCookies))
 
 router.post('/api/users', jsonBodyParser, withErrorHandling(handleRegisterUser))

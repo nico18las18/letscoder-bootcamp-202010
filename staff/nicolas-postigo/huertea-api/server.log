@@ -422,3 +422,95 @@ error 2020-11-29T18:05:02.929Z - ValidationError: User validation failed: passwo
     at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\mongoose\lib\document.js:2442:17
     at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\mongoose\lib\schematype.js:1225:9
     at processTicksAndRejections (internal/process/task_queues.js:79:11)
+info 2020-11-30T08:13:59.139Z - starting server
+info 2020-11-30T08:13:59.409Z - server running on port 4000
+info 2020-11-30T09:03:21.736Z - stopping server
+info 2020-11-30T09:03:30.300Z - starting server
+info 2020-11-30T09:03:30.522Z - server running on port 4000
+error 2020-11-30T09:09:44.469Z - AuthError: wrong credentials
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\authenticate-user.js:12:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+error 2020-11-30T09:09:59.571Z - AuthError: wrong credentials
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\authenticate-user.js:18:39
+error 2020-11-30T09:10:07.887Z - AuthError: wrong credentials
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\authenticate-user.js:18:39
+error 2020-11-30T09:10:36.717Z - AuthError: wrong credentials
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\authenticate-user.js:18:39
+info 2020-11-30T09:15:32.006Z - starting server
+info 2020-11-30T09:15:32.277Z - server running on port 4000
+error 2020-11-30T09:16:40.433Z - Error: Illegal arguments: string, undefined
+    at _async (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\bcryptjs\dist\bcrypt.js:286:46)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\bcryptjs\dist\bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at Object.bcrypt.compare (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\bcryptjs\dist\bcrypt.js:306:20)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\authenticate-user.js:15:29
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+error 2020-11-30T09:19:41.118Z - Error: Illegal arguments: string, undefined
+    at _async (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\bcryptjs\dist\bcrypt.js:286:46)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\bcryptjs\dist\bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at Object.bcrypt.compare (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\bcryptjs\dist\bcrypt.js:306:20)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\authenticate-user.js:15:29
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+error 2020-11-30T09:22:53.354Z - Error: Illegal arguments: string, undefined
+    at _async (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\bcryptjs\dist\bcrypt.js:286:46)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\bcryptjs\dist\bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at Object.bcrypt.compare (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\bcryptjs\dist\bcrypt.js:306:20)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\authenticate-user.js:15:29
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+error 2020-11-30T09:23:22.687Z - Error: Illegal arguments: string, undefined
+    at _async (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\bcryptjs\dist\bcrypt.js:286:46)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\bcryptjs\dist\bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at Object.bcrypt.compare (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\bcryptjs\dist\bcrypt.js:306:20)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\authenticate-user.js:15:29
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+info 2020-11-30T09:26:34.390Z - stopping server
+info 2020-11-30T09:33:05.950Z - starting server
+info 2020-11-30T09:33:06.126Z - server running on port 4000
+error 2020-11-30T09:34:45.921Z - Error: secretOrPrivateKey must have a value
+    at Object.module.exports [as sign] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\jsonwebtoken\sign.js:107:20)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-authenticate-user.js:12:35
+error 2020-11-30T09:35:21.709Z - Error: secretOrPrivateKey must have a value
+    at Object.module.exports [as sign] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\jsonwebtoken\sign.js:107:20)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-authenticate-user.js:12:35
+error 2020-11-30T09:35:49.962Z - ConflictError: user with e-mail maricarmen@mail.com already registered
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\register-user.js:16:33
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+error 2020-11-30T09:36:14.778Z - Error: secretOrPrivateKey must have a value
+    at Object.module.exports [as sign] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\jsonwebtoken\sign.js:107:20)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-authenticate-user.js:12:35
+error 2020-11-30T09:36:48.901Z - Error: secretOrPrivateKey must have a value
+    at Object.module.exports [as sign] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\jsonwebtoken\sign.js:107:20)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-authenticate-user.js:12:35
+error 2020-11-30T09:37:45.137Z - Error: secretOrPrivateKey must have a value
+    at Object.module.exports [as sign] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\jsonwebtoken\sign.js:107:20)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-authenticate-user.js:12:35
+error 2020-11-30T09:39:06.543Z - Error: secretOrPrivateKey must have a value
+    at Object.module.exports [as sign] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\jsonwebtoken\sign.js:107:20)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-authenticate-user.js:12:35
+info 2020-11-30T09:40:26.480Z - stopping server
+info 2020-11-30T09:40:53.305Z - starting server
+info 2020-11-30T09:40:53.662Z - server running on port 4000
+error 2020-11-30T09:41:19.599Z - Error: secretOrPrivateKey must have a value
+    at Object.module.exports [as sign] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\jsonwebtoken\sign.js:107:20)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-authenticate-user.js:12:35
+error 2020-11-30T09:49:09.746Z - Error: secretOrPrivateKey must have a value
+    at Object.module.exports [as sign] (C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\node_modules\jsonwebtoken\sign.js:107:20)
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\routes\api\handlers\handle-authenticate-user.js:12:35
+info 2020-11-30T09:55:08.985Z - stopping server
+info 2020-11-30T09:56:05.457Z - starting server
+info 2020-11-30T09:56:05.937Z - server running on port 4000
+info 2020-11-30T09:58:17.517Z - stopping server
+info 2020-11-30T09:58:54.342Z - starting server
+info 2020-11-30T09:58:54.618Z - server running on port 4000
+error 2020-11-30T10:02:00.250Z - AuthError: wrong credentials
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\authenticate-user.js:12:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+info 2020-11-30T10:13:39.850Z - stopping server
+info 2020-11-30T10:13:56.726Z - starting server
+info 2020-11-30T10:13:57.495Z - server running on port 4000
+error 2020-11-30T10:17:25.347Z - ConflictError: user with e-mail peter@mail.com already registered
+    at C:\Users\Nicolas\bootcamp\collab\letscoder-bootcamp-202010\staff\nicolas-postigo\huertea-api\logic\register-user.js:16:33
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)

@@ -12,7 +12,7 @@ module.exports = (req, res, next) => {
             let body = {}
 
             if (content) {
-                // content => { "hola": "mundo", "year": 2020 }
+
                 body = JSON.parse(content)
             }
 

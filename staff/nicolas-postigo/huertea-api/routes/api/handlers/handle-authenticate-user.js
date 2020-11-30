@@ -1,4 +1,4 @@
-const { authenticateUser } = require('../../../logic/')
+const { authenticateUser } = require('../../../logic')
 const jwt = require('jsonwebtoken')
 
 const { env: { JWT_SECRET, JWT_EXP } } = process
@@ -13,7 +13,7 @@ module.exports = (req, res, handleError) => {
 
                 res.status(200).json({ token })
             })
-            //.catch(error => handleError(error))
+
             .catch(handleError)
     } catch (error) {
         handleError(error)

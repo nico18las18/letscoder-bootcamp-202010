@@ -2,9 +2,10 @@ import React from 'react'
 import './Hub.sass'
 
 
-function Hub({ onHub, onGoCreateoffer }) {
-    return <sections>
 
+function Hub({ onHub, onGoCreateoffer }) {
+
+    return <sections>
         <form className="search_form" onSubmit={function (event) {
             event.preventDefault()
             var product = event.target.query.value

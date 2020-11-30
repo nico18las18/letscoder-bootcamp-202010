@@ -1,10 +1,11 @@
 import './App.css';
 import { Register, Login, Hub, Home, Createoffer } from './components'
 import { useState } from 'react'
-import { registerUser } from './logic'
+import { registerUser, authenticateUser } from './logic'
 
 function App() {
   const[view, setView] = useState('home')
+
 
   const handleGoToRegister = () => {
     console.log('fue bien')
@@ -36,9 +37,17 @@ function App() {
   }
 
   const handleLogin = (email, password) => {
-    console.log(email, password)
+    try {
+      authenticateUser(email, password, (error, token) => {
+        if (error) return alert(error.message)
 
-    setView('hub')
+        sessionStorage.token = token
+
+        setView('hub')
+      })
+    } catch (error) {
+      alert(error.message)
+    }
   }
 
   const handleGoCreateoffer = () => {
