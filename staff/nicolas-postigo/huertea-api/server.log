@@ -863,3 +863,6 @@ info 2020-11-30T18:56:01.314Z - starting server
 info 2020-11-30T18:56:01.588Z - server running on port 4000
 info 2020-11-30T18:59:22.446Z - starting server
 info 2020-11-30T18:59:22.817Z - server running on port 4000
+info 2020-12-01T08:01:13.872Z - stopping server
+info 2020-12-01T08:02:49.370Z - starting server
+info 2020-12-01T08:02:49.706Z - server running on port 4000
